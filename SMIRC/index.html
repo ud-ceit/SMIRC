@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Multidisciplinary Innovation and Research Conference (SMIRC)</title>
+<style>
+  :root{
+    --brand:#002855;
+    --accent:#ffc107;
+    --bg:#eaf3ff; /* Light blue background */
+    --text:#1a1a1a;
+    --link:#0056b3;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+
+  header.topnav{
+    position:sticky;top:0;z-index:999;
+    background:#fff;border-bottom:2px solid var(--accent);
+    box-shadow:0 2px 5px rgba(0,0,0,0.05);
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+  .brand{display:flex;align-items:center;gap:12px;padding:14px 0}
+  .brand h1{font-size:20px;margin:0;color:var(--brand);letter-spacing:.3px;font-weight:800}
+  nav{display:flex;flex-wrap:wrap;gap:10px 16px;padding:8px 0 14px}
+  nav a{color:var(--brand);text-decoration:none;font-weight:600;font-size:14px;padding:6px 10px;border-radius:10px;transition:0.2s}
+  nav a:hover{background:var(--brand);color:#fff}
+
+  section{scroll-margin-top:120px;padding:36px 0}
+  h2{color:var(--brand);margin:0 0 8px 0}
+  .lead{font-size:18px;color:#333}
+  .card{background:#fff;border:1px solid #e6eef7;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+  .grid{display:grid;gap:16px}
+  .cols-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .cols-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  table{width:100%;border-collapse:collapse}
+  th,td{border:1px solid #e6eef7;padding:10px;text-align:left}
+  th{background:#f1f5fb}
+  .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--accent);color:#000;font-weight:600;font-size:12px}
+  footer{background:var(--brand);color:#dbe7ff;padding:32px 0;margin-top:28px;text-align:center}
+  footer a{color:#fff;text-decoration:underline}
+  .footer-logos{display:flex;justify-content:center;align-items:center;gap:30px;flex-wrap:wrap;margin-bottom:20px;padding:20px 0}
+  .footer-logos img{height:80px;width:auto;object-fit:contain;background:#fff;padding:10px;border-radius:8px}
+
+  /* Hero section */
+  .hero{
+    background:linear-gradient(135deg,#002855,#004080);
+    color:#fff;
+    border-bottom:3px solid var(--accent);
+    padding:30px 0 20px;
+    text-align:center;
+  }
+  .hero h2{font-size:30px;margin:8px 0 8px;font-weight:700;color:#fff}
+  .dateplace{font-weight:700;color:var(--accent)}
+  .lead-hero{color:#f0f0f5; font-size:20px; max-width:700px; margin:12px auto 20px auto;}
+
+  /* Buttons */
+  .btn {
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:12px;
+    font-weight:700;
+    text-decoration:none;
+    transition:0.25s;
+    margin:6px;
+    font-size:16px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
+  }
+  .btn-primary {
+    background:#ffc107;
+    color:#002855;
+  }
+  .btn-primary:hover {
+    background:#e0a800;
+    transform:translateY(-2px);
+    box-shadow:0 6px 12px rgba(0,0,0,0.2);
+  }
+  .btn-secondary {
+    background:#002855;
+    color:#ffc107;
+    border:2px solid #ffc107;
+  }
+  .btn-secondary:hover {
+    background:#004080;
+    transform:translateY(-2px);
+    color:#fff;
+  }
+
+  .muted{color:#58606b}
+  .note{font-size:13px;color:#4b5663}
+</style>
+<link rel="stylesheet" href="iiscc-responsive.css">
+</head><body id="top">
+<header class="topnav">
+  <div class="wrap">
+    <div class="brand">
+      <img src="smirc_logo.png" style="width:2cm; height:2cm;">
+      <h1>Student Multidisciplinary Innovation and Research Conference (SMIRC)</h1>
+    </div>
+    <nav>
+      <a href="#top">Home</a>
+      <a href="#committee">Committee</a>
+      <a href="#dates">Important Dates</a>
+      <a href="#tracks">CFP</a>
+      <a href="#program">Program</a>
+      <a href="#tpc">TPC</a>
+      <a href="#submission">Submission</a>
+      <a href="#award">Award/Support</a>
+      <a href="#venue">Venue</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h2>Student Multidisciplinary Innovation and Research Conference</h2>
+    <p class="dateplace">June 5-6, 2026</p>
+    <p class="dateplace">University of Dubai, UAE</p>
+  </div>
+</section>
+
+<main class="wrap">
+
+<section id="about-conference">
+  <h2>About the Conference</h2>
+  <div class="card">
+    <p>
+      The <strong>Student Multidisciplinary Innovation and Research Conference (SMIRC)</strong> is an annual academic platform that highlights the creativity, innovation, and research excellence of undergraduate and graduate students across diverse disciplines. 
+    </p>
+    <p>
+      The conference brings together students, faculty, researchers, and industry professionals to explore the intersections between Computing and Information Systems, Engineering, Business, Law, and Education. Each edition of SMIRC includes two sessions per year, organized at the end of each academic semester (Fall and Spring), offering continuous opportunities for students to present their work, exchange ideas, and engage in interdisciplinary collaboration.
+    </p>
+    <p>
+      This year, under the theme <strong>"Innovating Across Disciplines for a Smarter Future,"</strong> SMIRC promotes cross-disciplinary research, applied innovation, and problem-solving that address contemporary societal and technological challenges. Through poster sessions and live demonstrations, participants will showcase projects that reflect emerging trends in artificial intelligence, sustainability, digital transformation, and data-driven decision-making.
+    </p>
+    <p>
+      The conference also features expert panels and innovation challenges led by academic and industry leaders. These sessions aim to nurture a culture of creativity, strengthen university-industry partnerships, and align student research with national priorities in artificial intelligence, sustainability, and smart development.
+    </p>
+    <p>
+      Sponsored by the Research Office, in collaboration with the IEEE UAE Section and participating colleges, SMIRC seeks to inspire a culture of inquiry, collaboration, and lifelong learning across all academic disciplines.
+    </p>
+  </div>
+</section>
+
+<!-- Organization Committee Section -->
+<section id="committee">
+  <h2>Organization Committee</h2>
+  <div class="card">
+    <h3>Conference Chairs</h3>
+    <p>Prof. Hussain Al Ahmad, Vice President for Academic Affairs, University of Dubai, UAE</p>
+    <p>Prof. Wathiq Mansoor, Dean, College of Engineering & IT, University of Dubai, UAE</p>
+    
+    <h3>Program Committee Chairs</h3>
+    <p>Prof. Shadi Atalla, Director, University of Dubai, Dubai, UAE</p>
+    <p>Prof. Amjad Gawanmeh, Professor, University of Dubai</p>
+    <p>Dr. Husameldin Mukhtar, Director of Research, University of Dubai, UAE</p>
+    
+    <h3>Committee Members</h3>
+    <p>Dr. Muneer Jahwash, Faculty of Business Management, Emirates Aviation University, UAE</p>
+    <p>Dr. Kahtan Aziz, Anglia Ruskin University, UK</p>
+    <p>Dr. Rasool Asal, University of Dubai, UAE</p>
+    <p>Dr. Abigail Casten Copiaco, University of Dubai, UAE</p>
+    <p>Dr. Ghulam Amjad Hussain, University of Dubai, UAE</p>
+    <p>Eng. Muna Darweesh, University of Dubai, UAE</p>
+  </div>
+</section>
+
+<section id="dates">
+  <h2>Important Dates</h2>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Milestone</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paper Submission</td>
+          <td>March 1, 2026</td>
+        </tr>
+        <tr>
+          <td>Paper Notification</td>
+          <td>April 1, 2026</td>
+        </tr>
+        <tr>
+          <td>Camera Ready</td>
+          <td>May 1, 2026</td>
+        </tr>
+        <tr>
+          <td>Conference Date</td>
+          <td>June 5-6, 2026</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="tracks">
+  <h2>Call for Papers</h2>
+  <div class="card">
+    <p>Submissions are invited from undergraduate and graduate students across all disciplines, including but not limited to:</p>
+    <ul>
+      <li><strong>Computing and Information Systems:</strong> Artificial Intelligence, Data Science, Cybersecurity, Cloud Computing, Internet of Things, and Smart Applications</li>
+      <li><strong>Engineering and Technology:</strong> Robotics, Renewable Energy, Embedded Systems, Smart Cities, and Sustainable Design</li>
+      <li><strong>Business and Management:</strong> Innovation Management, Digital Transformation, Entrepreneurship, and FinTech</li>
+      <li><strong>Law and Policy:</strong> Cyber Law, Digital Governance, Data Privacy, and Legal Aspects of Emerging Technologies</li>
+      <li><strong>Education and Social Sciences:</strong> Technology-Enhanced Learning, Educational Innovation, and Social Impact Research</li>
+    </ul>
+  </div>
+</section>
+
+<section id="program">
+  <h2>Program Overview</h2>
+  <div class="card">
+    <p>A detailed agenda will be published closer to the conference date.</p>
+    <p>The program will include:</p>
+    <ul>
+      <li>Research paper presentations</li>
+      <li>Poster sessions</li>
+      <li>Live demonstrations</li>
+      <li>Expert panels</li>
+      <li>Innovation challenges</li>
+    </ul>
+  </div>
+</section>
+
+<section id="tpc">
+  <h2>Technical Program Committee</h2>
+  <div class="card">
+    <p>Prof. Shadi Atalla, Director, University of Dubai, Dubai, UAE</p>
+    <p>Prof. Amjad Gawanmeh, Professor, University of Dubai</p>
+    <p>Dr. Husameldin Mukhtar, Director of Research, University of Dubai, UAE</p>
+    <p>Dr. Muneer Jahwash, Faculty of Business Management, Emirates Aviation University, UAE</p>
+    <p>Dr. Kahtan Aziz, Anglia Ruskin University, UK</p>
+    <p>Dr. Rasool Asal, University of Dubai, UAE</p>
+    <p>Dr. Abigail Casten Copiaco, University of Dubai, UAE</p>
+    <p>Dr. Ghulam Amjad Hussain, University of Dubai, UAE</p>
+    <p>Eng. Muna Darweesh, University of Dubai, UAE</p>
+  </div>
+</section>
+
+<section id="submission">
+  <h2>Submission Instructions</h2>
+  <div class="card">
+    <h3>Submission Link</h3>
+    <p>
+      Submit your papers and abstracts using the online form: <a href="https://edas.info/chair.php?c=34585" target="_blank">SMIRC 2026 Submission Portal</a>
+    </p>
+    
+    <h3>Submission Guidelines</h3>
+    <ul>
+      <li>Submissions can include research papers, posters, innovation projects, or demonstrations.</li>
+      <li>All papers must be original and unpublished work by students (faculty co-authorship is allowed for guidance).</li>
+      <li>Papers should follow the IEEE conference format (4 pages).</li>
+      <li>Each submission will undergo peer review by the conference committee.</li>
+      <li>All submissions must be written in English.</li>
+      <li>Only PDF files will be accepted for the review process.</li>
+      <li>All submissions must be made through EDAS.</li>
+    </ul>
+    
+    <h3>Publication and Indexing</h3>
+    <p>
+      Accepted papers will be submitted for possible inclusion into IEEE Xplore subject to meeting IEEE Xplore's scope and quality requirements, and to be indexed in Scopus and Clarivate SCI indexing (IEEE LoA#69786).
+    </p>
+    <p>
+      LOA Under approval, Link to LOA to be added
+    </p>
+    <p>
+      Accepted papers, posters, and demonstrations will be showcased during SMIRC 2026 as part of the poster and demonstration sessions.
+    </p>
+    <p>
+      Selected works may be considered for publication in the University of Dubai's Research Repository.
+    </p>
+    
+    <h3>Formatting and Requirements</h3>
+    <ul>
+      <li>All submissions must be written in English.</li>
+      <li>The maximum paper length is four to six (4-6) printed pages (10-point font) in the standard IEEE two-column conference format.</li>
+      <li>Two extra pages are allowed at an additional cost of $100 per page.</li>
+      <li>Papers exceeding (6+2) pages or less than four pages will not be accepted on EDAS.</li>
+    </ul>
+    
+    <h3>Templates</h3>
+    <p>
+      Standard IEEE conference templates for LaTeX formats are found at: <a href="#">IEEE Templates</a>
+    </p>
+    <p>
+      You may also use one of the following templates for Microsoft Word: A4, US letter.
+    </p>
+    
+    <h3>Submission Process</h3>
+    <ul>
+      <li>Only PDF files will be accepted for the review process.</li>
+      <li>All submissions must be made through EDAS.</li>
+      <li>If you have any questions regarding the submission of manuscripts, please contact the conference chairs via email.</li>
+    </ul>
+    
+    <h3>Plagiarism and AI Policy</h3>
+    <p>
+      Similarity in the submitted paper must be less than 30%. Submissions exceeding this threshold will be rejected.
+    </p>
+    <p>
+      Authors must declare the use of AI in the preparation of their manuscript, including the role of AI in generating content, analysis, or any other contributions. For more details, please refer to the IEEE policy for AI usage.
+    </p>
+    <p>
+      <a href="#">IEEE Plagiarism and AI Policy</a>
+    </p>
+  </div>
+</section>
+
+<section id="award">
+  <h2>Award & Support Program</h2>
+  <div class="card">
+    <h3>Awards and Recognition</h3>
+    <p>Outstanding student presentations will be recognized during the conference.</p>
+    <ul>
+      <li><strong>Best Paper Award:</strong> To be announced</li>
+      <li><strong>Best Poster Award:</strong> To be announced</li>
+      <li><strong>Best Demonstration Award:</strong> To be announced</li>
+    </ul>
+    <p class="note">Award details and prizes will be announced closer to the conference date.</p>
+  </div>
+</section>
+
+<section id="venue">
+  <h2>Venue</h2>
+  <div class="card">
+    <p><strong>Location:</strong> University of Dubai, Academic City Campus, Dubai, UAE</p>
+    <p>More details about the specific venue and facilities will be announced soon.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>For inquiries, email us at: <a href="mailto:satalla@ud.ac.ae">satalla@ud.ac.ae</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-logos">
+      <img src="smirc_logo.png" alt="SMIRC Logo">
+      <img src="https://ud.ac.ae/wp-content/uploads/2020/02/xudlogo2-1.png.pagespeed.ic.c8vUbALUUZ.webp" alt="University of Dubai">
+      <img src="https://icspis.com/wp-content/uploads/2024/04/Light_blue_IEEE_logo-2-768x280.png" alt="IEEE UAE Section">
+    </div>
+    <p><strong>SMIRC 2026</strong> · Student Multidisciplinary Innovation and Research Conference · June 5-6, 2026</p>
+    <p class="note">© 2026 Research at University of Dubai. This site is under construction.</p>
+  </div>
+</footer>
+</body>
+</html>
